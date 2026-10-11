@@ -4,117 +4,153 @@
 <head>
     <meta charset="utf8" />
     <title>BatiJavier</title>
-    
+
 
     <style>
-       body{
-        background: black; 
-        
+        body {
+            background: black;
+
         }
-        h1{
-          color: gold;
-          text-align: center;
+
+        h1 {
+            color: gold;
+            text-align: center;
         }
-        h2{
+
+        h2 {
             color: gold;
         }
 
-        p{
-            color: gray
+        p {
+            color: silver;
         }
-        ul{
-            color: gray
+
+        ul {
+            color: silver;
         }
-        ul{ 
+
+        ul {
             list-style: "🦇"
 
         }
-        footer{
-         text-align: center;
-         color: gold;
+
+        footer {
+            text-align: center;
+            color: gold;
         }
 
         @keyframes subir {
-    0%   { transform: translateY(0); opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 1; }
-    100% { transform: translateY(-110vh); opacity: 0; }
-}
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
 
-.corazones {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
-}
+            10% {
+                opacity: 1;
+            }
 
-.corazon {
-    position: absolute;
-    bottom: -50px;
-    animation: subir 8s linear infinite;
-}
-  
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        .corazones {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .corazon {
+            position: absolute;
+            bottom: -50px;
+            animation: subir 8s linear infinite;
+        }
+
+        .caja {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 24px;
+            border: 2px solid gold;
+            border-radius: 16px;
+            background: rgba(16, 28, 051, 0.8);
+        }
     </style>
 
 </head>
 
 <body>
 
-<div class="corazones" aria-hidden="true">
-    <span class="corazon" style="left: 5%;  font-size: 24px; animation-duration: 7s;  animation-delay: 0s;">✨</span>
-    <span class="corazon" style="left: 18%; font-size: 32px; animation-duration: 9s;  animation-delay: 2s;">❤️‍🔥</span>
-    <span class="corazon" style="left: 32%; font-size: 20px; animation-duration: 6s;  animation-delay: 4s;">💗</span>
-    <span class="corazon" style="left: 47%; font-size: 36px; animation-duration: 10s; animation-delay: 1s;">✨</span>
-    <span class="corazon" style="left: 60%; font-size: 26px; animation-duration: 8s;  animation-delay: 3s;">💕</span>
-    <span class="corazon" style="left: 7%; font-size: 30px; animation-duration: 7s;  animation-delay: 6s;">❤️‍🔥</span>
-    <span class="corazon" style="left: 85%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">💖</span>
-    <span class="corazon" style="left: 94%; font-size: 34px; animation-duration: 11s; animation-delay: 2.5s;">🦇</span>
-    <span class="corazon" style="left: 60%; font-size: 26px; animation-duration: 8s;  animation-delay: 7s;">❤️‍🔥</span>
-    <span class="corazon" style="left: 73%; font-size: 30px; animation-duration: 7s;  animation-delay: 5s;">✨</span>
-    <span class="corazon" style="left: 85%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">🌃</span>
-    <span class="corazon" style="left: 20%; font-size: 34px; animation-duration: 11s; animation-delay: 5s;">❤️‍🔥</span>
-    <span class="corazon" style="left: 68%; font-size: 26px; animation-duration: 8s;  animation-delay: 3s;">🌃</span>
-    <span class="corazon" style="left: 37%; font-size: 30px; animation-duration: 7s;  animation-delay: 5s;">💗</span>
-    <span class="corazon" style="left: 20%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">💖</span>
-    <span class="corazon" style="left: 31%; font-size: 34px; animation-duration: 11s; animation-delay: 2.5s;">🦇</span>
-</div>
+    <div class="corazones" aria-hidden="true">
+        <span class="corazon" style="left: 5%;  font-size: 24px; animation-duration: 7s;  animation-delay: 0s;">✨</span>
+        <span class="corazon" style="left: 18%; font-size: 32px; animation-duration: 9s;  animation-delay: 2s;">❤️‍🔥</span>
+        <span class="corazon" style="left: 32%; font-size: 20px; animation-duration: 6s;  animation-delay: 4s;">💗</span>
+        <span class="corazon" style="left: 47%; font-size: 36px; animation-duration: 10s; animation-delay: 1s;">✨</span>
+        <span class="corazon" style="left: 60%; font-size: 26px; animation-duration: 8s;  animation-delay: 3s;">💕</span>
+        <span class="corazon" style="left: 07%; font-size: 30px; animation-duration: 7s;  animation-delay: 6s;">❤️‍🔥</span>
+        <span class="corazon" style="left: 85%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">💖</span>
+        <span class="corazon" style="left: 94%; font-size: 34px; animation-duration: 11s; animation-delay: 2.5s;">🦇</span>
+        <span class="corazon" style="left: 60%; font-size: 26px; animation-duration: 8s;  animation-delay: 7s;">❤️‍🔥</span>
+        <span class="corazon" style="left: 73%; font-size: 30px; animation-duration: 7s;  animation-delay: 5s;">✨</span>
+        <span class="corazon" style="left: 85%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">🌃</span>
+        <span class="corazon" style="left: 20%; font-size: 34px; animation-duration: 11s; animation-delay: 5s;">❤️‍🔥</span>
+        <span class="corazon" style="left: 68%; font-size: 26px; animation-duration: 8s;  animation-delay: 3s;">🌃</span>
+        <span class="corazon" style="left: 37%; font-size: 30px; animation-duration: 7s;  animation-delay: 5s;">💗</span>
+        <span class="corazon" style="left: 20%; font-size: 22px; animation-duration: 9s;  animation-delay: 0.5s;">💖</span>
+        <span class="corazon" style="left: 31%; font-size: 34px; animation-duration: 11s; animation-delay: 2.5s;">🦇</span>
+    </div>
 
 
     <header>
         <h1>💘🦇Javier me encantas🦇💘</h1>
     </header>
- <p>Despues de tanto pensarlo y tener mil ideas, decidí que esta será una carta de amor 💋</p>
 
-           <article class="article"> 
-                <h2>¿Por qué me encantas?</h2>
-                <ul>
-                    <li>Porque eres lo mas lindo que he conocido en mi vida</li>
-                    <li>Porque hablar contigo alegra mis dias</li>
-                    <li>Porque contigo puedo ser yo</li>
-                    <li>Porque contigo me imagino toda una vida juntitos</li>
-                    <li>Porque me haces muy feliz</li>
-                    <li>Porque eres muy muy tierno</li>
-                    <li>Porque siempre me dices cosas muy lindas  </li>
-                </ul>
-            
-            </article>
 
-            <article class="article"> 
-                <h2>¿Cuánto me encantas?</h2>
-                <ul>
-                    <li>Tanto como para aprender a hacer una pagina web</li>
-                    <li>Tanto como para aprender a jugar lol </li>
-                    <li>Tanto como para pensarte todo el día</li>
-                    <li></li>
-                </ul>
-            </article>
+    <div class="caja">
+        <p>Despues de tanto pensarlo y tener mil ideas, decidí que esta será una carta de amor 💋</p>
 
-            <article class="article"> 
-                <h2>Todo lo que siento por ti</h2>
-                <p>texto del articulo</p>
-            </article> 
-  <footer>Eres lo mas lindo del mundo</footer>
+        <article class="article">
+            <h2>¿Por qué me encantas?</h2>
+            <ul>
+                <li>Porque eres lo mas lindo que he conocido en mi vida</li>
+                <li>Porque hablar contigo alegra mis dias</li>
+                <li>Porque contigo puedo ser yo</li>
+                <li>Porque contigo me imagino toda una vida juntitos</li>
+                <li>Porque me haces muy feliz</li>
+                <li>Porque eres muy muy tierno</li>
+                <li>Porque siempre me dices cosas muy lindas</li>
+            </ul>
+
+        </article>
+
+        <article class="article">
+            <h2>¿Cuánto me encantas?</h2>
+            <ul>
+                <li>Tanto como para aprender a hacer una pagina web</li>
+                <li>Tanto como para aprender a jugar lol </li>
+                <li>Tanto como para pensarte todo el día</li>
+                <li>Tanto como para querer todo contigo</li>
+                <li>Tanto como para cruzar todo Santiago para vernos</li>
+                <li>Tanto como para quedarme despierta toda la noche hablando contigo</li>
+                <li>Y obviamnete que de aqui al infinito jajaja</li>
+            </ul>
+        </article>
+
+        <article class="article">
+            <h2>Todo lo que siento por ti</h2>
+            <p>Yo creo que esta ha sido la parte mas dificil de hacer, escribir mis sentimientos y decirte todo lo que siento por ti, a veces me cuesta un poco pero creo que tu realmente lo vales, al 100%.</p>
+            <p>Desde que comenzamos a hablar te he tomado mucho mucho cariño, ya eres una persona especial en mi vida, y me encantaria que fueras parte por siempre, como ya te he dicho, que te quiero pato, patodalavida miamorrr</p>
+            <p></p>
+        </article>
+
+    </div>
+
+    <footer>Eres lo mas lindo del mundo</footer>
 
 </body>
-
